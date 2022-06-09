@@ -58,21 +58,13 @@
 
 // 4. Pазными способами решите вопрос соединения двух массивов без повторов
 
-// let array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-// let array2 = ["cat", "dog", true, "car", 21];
+// let array1 = [1, 1, 3, 3, true, 6, 5.7, "dog", 9, 0];
+// let array2 = ["cat", "dog", true, "car", 5.7];
+
+// let array = array1.concat(array2);
 
 // //1)
-// let arrResult = [...array1, ...array2];
+// const result  = [...new Set(array)];
+
 // //2)
-// let arrResult = array1.concat(array2);
-// //3)
-// array1.push(...array2);
-// //4)
-//array2.forEach(el => array1.push(el));
-// //5)
-// for (let i = 0; i<array2.length; i++){
-//     array1.push(array2[i]);
-// };
-
-
-
+// const result = array.filter((el, ind) => ind === array.indexOf(el));
